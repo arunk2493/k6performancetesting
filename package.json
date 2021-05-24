@@ -1,0 +1,30 @@
+{
+  "name": "perftutorialk6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "jsonoutput": "k6 run --out json=my_test_result.json performancetesting/src/tests/script1.js",
+    "influxdb": "k6 run --out influxdb=http://localhost:8086/performance performancetesting/src/tests/script1.js",
+    "csvoutput": "k6 run --out csv=my_test_result.csv performancetesting/src/tests/script1.js",
+    "influxdb1": "k6 run --out influxdb=http://localhost:8086/performance performancetesting/src/tests/simplePOST.js",
+    "influxcreate": " node performancetesting/src/db/createDB.js",
+    "influxins": "k6 run --out influxdb=http://localhost:8086/PerformanceMetrics performancetesting/src/tests/damagedPartyKeyGET.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunk2493/k6performancetesting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arunk2493/k6performancetesting/issues"
+  },
+  "homepage": "https://github.com/arunk2493/k6performancetesting#readme",
+  "devDependencies": {
+    "k6": "0.0.0"
+  },
+  "dependencies": {
+    "influx": "^5.9.0"
+  }
+}
