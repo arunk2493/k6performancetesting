@@ -5,7 +5,9 @@ const influx = new Influx.InfluxDB({
     username: 'arun2493',
     password: 'Welcome@2021'
 })
-const dbName = 'PerformanceMetrics'
+const dbName = 'Selenium'
 // Create an InfluxDB database
 influx.createDatabase(dbName);
 console.log(dbName);
+//influx.getMeasurements(dbName).then(names =>    console.log('My measurement names are: ' + names.join(', ')));
+

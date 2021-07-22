@@ -1,0 +1,18 @@
+{
+  "id": 2493,
+  "category": {
+    "id": 2493,
+    "name": "birds"
+  },
+  "name": "Budgie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 13,
+      "name": "Blue"
+    }
+  ],
+  "status": "available"
+}
