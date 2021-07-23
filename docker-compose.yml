@@ -5,15 +5,36 @@ services:
     container_name: grafana
     restart: always
     ports:
-      - 3000:3000
+      - 3002:3000
     networks:
       - grafana_network
     volumes:
       - grafana_data:/var/lib/grafana
+    depends_on:
+      - influxdb
+    secrets:
+      - my_secret
+  influxdb:
+    image: influxdb:1.8.5
+    container_name: influxdb_local
+    restart: always
+    ports:
+      - 8087:8086
+    networks:
+      - grafana_network
+    volumes:
+      - influxdb_data:/var/lib/influxdb
+    environment:
+      - INFLUXDB_USER=arun2493
+      - INFLUXDB_USER_PASSWORD=Welcome@2021
 
 networks:
   grafana_network:
 volumes:
   grafana_data:
+  influxdb_data:
+secrets:
+  my_secret:
+    file: /Users/apple/Documents/projects/Study/Backup Study/PerformanceTesting/k6performancetesting/secret.txt
 
 
