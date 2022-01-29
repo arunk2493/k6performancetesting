@@ -32,6 +32,4 @@ export default () => {
 
     let myObjects = http.get(`${BASE_URL}/my/crocodiles/`, authHeaders).json();
     check(myObjects, { 'retrieved crocodiles': (obj) => obj.length > 0 });
-
-    sleep(1);
 };

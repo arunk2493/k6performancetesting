@@ -1,11 +1,11 @@
 const Influx = require('influx');
 const influx = new Influx.InfluxDB({
     host: 'localhost',
-    port: 8086,
+    port: 8087,
     username: 'arun2493',
     password: 'Welcome@2021'
 })
-const dbName = 'Selenium'
+const dbName = 'PerformanceTesting'
 // Create an InfluxDB database
 influx.createDatabase(dbName);
 console.log(dbName);
