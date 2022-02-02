@@ -5,7 +5,7 @@ const influx = new Influx.InfluxDB({
     username: 'arun2493',
     password: 'Welcome@2021'
 })
-const dbName = 'PerformanceTesting'
+const dbName = 'QACommunity'
 // Create an InfluxDB database
 influx.createDatabase(dbName);
 console.log(dbName);

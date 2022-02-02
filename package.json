@@ -10,7 +10,7 @@
     "csvoutput": "k6 run --out csv=my_test_result.csv performancetesting/src/tests/thersholdsample.js",
     "influxdbdocker": "k6 run --out influxdb=http://localhost:8087/PerformanceTesting performancetesting/src/tests/geekNight/testingtypes/smoke-test.js",
     "influxgeeknight": "k6 run --out influxdb=http://localhost:8086/PerformanceTesting performancetesting/src/tests/script1.js",
-    "sampleSmoke": "k6 run --out influxdb=http://localhost:8087/PerformanceTesting performancetesting/src/tests/geekNight/testingtypes/smoke-test.js",
+    "sampleSmoke": "k6 run --out influxdb=http://localhost:8087/QACommunity performancetesting/src/tests/geekNight/testingtypes/smoke-test.js",
     "sampleSmoke1": "k6 run --out influxdb=http://localhost:8087/geeknight performancetesting/src/tests/geekNight/testingtypes/smoke-test-1.js",
     "sampleLoad": "k6 run --out influxdb=http://localhost:8087/geeknight performancetesting/src/tests/geekNight/testingtypes/load-test.js",
     "sampleStress": "k6 run --out influxdb=http://localhost:8087/geeknight performancetesting/src/tests/geekNight/testingtypes/stress-test.js",
