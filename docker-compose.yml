@@ -22,8 +22,8 @@ services:
     volumes:
       - influxdb_data:/var/lib/influxdb
     environment:
-      - INFLUXDB_USER=arun2493
-      - INFLUXDB_USER_PASSWORD=Welcome@2021
+      - INFLUXDB_USER=<username>
+      - INFLUXDB_USER_PASSWORD=<password>
 
 networks:
   grafana_network:
